@@ -1,0 +1,22 @@
+version: 2
+
+models:
+  - name: orders_list
+    description: List of all orders placed
+    columns:
+      - name: id
+        tests:
+          - unique
+          - not_null
+      - name: customer_name
+        tests:
+          - not_null  
+  - name: order_details
+    description: Details of orders placed
+    columns:
+      - name: id
+        tests: 
+          - not_null
+      
+    
+      
